@@ -1,0 +1,143 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[left=0.75in, right=0.75in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{marvosym}
+\usepackage{fontawesome}
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+
+\usepackage{resume}
+
+\begin{document}
+
+\begin{center}
+	\textbf{\LARGE Archit Pandey}\\[1ex]
+	\textscale{1.063}{
+		\faInbox\hspace{0.5ex}\href{mailto:architpa@usc.edu}{architpa@usc.edu}
+		% \href{mailto:archpndy@gmail.com}{archpndy@gmail.com}
+		\hspace{1ex}
+		\faLinkedin\hspace{0.5ex}\href{https://linkedin.com/in/archit-p}{linkedin.com/in/archit-p}
+		\hspace{1ex}
+		\faGithub\hspace{0.5ex}\href{https://github.com/archit-p}{github.com/archit-p}
+		\hspace{1ex}
+		\faMobilePhone\hspace{0.5ex} +91 97423 55213
+	}
+\end{center}
+
+% \vspace{-0.5ex}
+
+\roottitle{Education}
+
+\headedsectionfive
+{University of Southern California}
+{Los Angeles, CA}
+{MS in Computer Science}
+{Starting Aug 2021}
+
+\headedsectionfive
+{National Institute of Technology Karnataka}
+{Surathkal, India}
+{BTech in Computer Science and Engineering, GPA 9.05}
+{Aug 2016 -- May 2020}
+
+\roottitle{Languages and Technologies}
+\begin{circlist}
+	\item Javascript, Java, Go, Python, C, C++
+	\item Node.js, React, Spring Boot, Docker, Kafka, PostgresQL, MongoDB, Redis, OpenNetVM, DPDK
+\end{circlist}
+
+\roottitle{Work Experience}
+\headedsection
+{Deskera}
+{Pune, India}
+{Software Development Engineer 1}
+{Aug 2020 -- Present}{
+	\begin{circlist}
+		\item Built the Deskera ECom app (\textit{React}) and microservices (\textit{Spring Boot}) to manage e-commerce stores.
+		\item Implemented long-running data synchronization jobs using Redis Lists as a job queue. This resulted in reduced data loss and faster recovery for running jobs in case of a service failure.
+		\item Used Debezium for change capture and Kafka for passing events between services, leading to a 2x speedup in web service response time versus an inter-service call based approach.
+	\end{circlist}
+}
+
+\headedsection
+{University of Ottawa}
+{Ottawa, Canada}
+{Visiting Student Researcher under Prof. David Knox}
+{May 2019 -- Aug 2019}{
+	\begin{circlist}
+		\item Built an intrusion detection technique that profiles malware using text-mining of network traffic.
+		\item The technique encodes packets into words and packet flows into \textit{n-grams}. These \textit{n-grams} are vectorized using Doc2Vec, and fed into a Support Vector Machine (SVM) classification model.
+		\item When evaluated against the DeepTraffic network traffic dataset (flow length being varied), our model obtained a 0.95 precision, 0.94 accuracy and 0.89 F1 score in malware classification.
+	\end{circlist}
+}
+
+\headedsection
+{Indian Institute of Science}
+{Bangalore, India}
+{Research Intern under Prof. K. Gopinath}
+{May 2018 -- Jul 2018}{
+	\begin{circlist}
+		\item Studied performance of various Bitcoin nodes - payment verification nodes, full nodes with and without pruning.
+		\item Implemented a compression algorithm to reduce size of Bitcoin blocks and the blockchain, using history summarization and LZ77 compression, resulting in a 0.78 compression ratio.
+	\end{circlist}
+}
+
+\roottitle{Selected Projects}
+
+\headedsectiontwo
+{Handwritten Equation Solver}{}{}
+{
+	% [\href{https://github.com/Handwritten-Equation-Solver/Handwritten-Equation-Solver}{Code}]
+	Android application that solves math equations in an image, using connected-component based image segmentation and a CNN model (\textit{Keras}) for symbol recognition. \textit{Node,js, Ternsorflow}.
+}
+
+\headedsectiontwo
+{React Database}{}{}
+{Database component with support for data types, sorting and filtering. \textit{React}}
+
+\headedsectiontwo
+{DPDK Framework for Queue Management}{}{}
+{
+	% [\href{https://ieeexplore.ieee.org/document/9289914}{Pub}]
+	High-performance (tested upto 40Gbps bandwidth), lightweight (1000 lines of C) framework for managing congestion in queues (ex. cloud service queues). \textit{DPDK, C}.
+}
+
+\headedsectiontwo
+{ONVM-Snort}{}{}{
+	% [\href{https://github.com/sdnfv/onvm-snort}{Code}]
+	Virtualized Network Function (VNF) for the Snort IDS. \textit{OpenNetVM, Snort}}
+
+\headedsectiontwo
+{VoteChain}{}{}
+{
+	% [\href{https://github.com/archit-p/votechain}{Code}]
+	% [\href{https://ieeexplore.ieee.org/document/8978295}{Pub}]
+	Distributed voting system using blockchain as a ledger to store votes. \textit{Python}.
+}
+
+\headedsectiontwo{Secure Biometric Authentication System}{}{}{
+	% [\href{https://github.com/archit-p/privacy-preserving-biometrics}{Code}]
+	Application to authenticate a user using encrypted bio-metric data. \textit{C++}}.
+
+\roottitle{Awards and Additional Experience}
+
+\begin{circlist}
+	\item \textbf{Mitacs Globalink Grant 2019}\hspace{0.5em}One of 1500 selected globally out of 100,000+ applicants.
+	\item \textbf{Narendra Summer Fellowship 2018}\hspace{0.5em}One of 13 selected in India out of 2,000+ applicants.
+	\item \textbf{Chair at IEEE NITK}\hspace{0.5em}Led 150 volunteers in organizing programming workshops and mentoring events.
+\end{circlist}
+
+% \spacedhrule{0.8ex}{0.0ex}
+% \roottitle{Extra-Curricular Activities}
+% \headedsectiontwo
+% {Chair at IEEE NITK}{}{}
+% {\vspace{-2.4ex}
+%     \begin{circlist}
+%         \item Managed \textit{Envision}, a program to mentor freshmen on yearlong projects, seeing 100+ participants \& 15+ successful projects.
+%         \item Organized 4 workshops across colleges in the Dakshina Kannada region on topics such as Git, Image Processing, etc.
+%     \end{circlist}
+% }
+
+\end{document}
