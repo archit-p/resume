@@ -7,6 +7,23 @@ Software developer resume using Latex for markup, and versioned deploys to GitHu
 * PDF generated on each push
 * Versioned PDFs organized in GitHub Releases
 
+## Getting Started
+### Clone
+```
+git clone https://github.com/archit-p/resume
+```
+### Editing
+Use your favorite Latex editor to edit the resume content. Some good examples:
+* [TeXStudio](https://www.texstudio.org)
+* [MacTeX](http://www.tug.org/mactex/)
+* [Overleaf](https://overleaf.com)
+### Releasing
+Once satisfied with the changes, create a new tag. Doing so will create a new release and upload the resume PDF there.
+```
+git tag <version-number>
+git push origin <version-number>
+```
+
 ## Preview
 ![img](./img/preview.png)
 
