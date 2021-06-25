@@ -13,7 +13,7 @@ Software developer resume using Latex for markup, and versioned deploys to GitHu
 git clone https://github.com/archit-p/resume
 ```
 ### Editing
-Use your favorite Latex editor to edit the resume content. Some good examples:
+Use your favorite Latex editor to edit the resume content.
 * [TeXStudio](https://www.texstudio.org)
 * [MacTeX](http://www.tug.org/mactex/)
 * [Overleaf](https://overleaf.com)
