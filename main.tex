@@ -13,92 +13,96 @@
 \begin{document}
 
 \begin{center}
-	\textbf{\LARGE Archit Pandey}\\[1ex]
-	\textscale{1.063}{
-		\faInbox\hspace{0.5ex}\href{mailto:architpa@usc.edu}{architpa@usc.edu}
-		\hspace{0.5ex}
-		\faLinkedin\hspace{0.5ex}\href{https://linkedin.com/in/archit-p}{linkedin.com/in/archit-p}
-		\hspace{0.5ex}
-		\faGithub\hspace{0.5ex}\href{https://github.com/archit-p}{github.com/archit-p}
-		\hspace{0.5ex}
-		\faMobilePhone\hspace{0.5ex} +91 97423 55213
+	\textbf{\Large Archit Pandey}\\[4px]
+	\textscale{1.0}{
+	   % GitHub:\hspace{2px}\href{https://github.com/archit-p}{github.com/archit-p}
+	    GitHub: https://github.com/archit-p
+	    \hspace{4px}
+% 		Email:\hspace{2px}\href{mailto:architpa@usc.edu}{architpa@usc.edu}
+        Email: architpa@usc.edu
+% 		\hspace{0.5ex}
+% 		\faLinkedin\hspace{4px}\href{https://linkedin.com/in/archit-p}{linkedin.com/in/archit-p}
+        \hspace{4px}
+		Phone: 213-573-3020
 	}
 \end{center}
 
-% \vspace{-0.5ex}
+\vspace{-4px}
 
 \roottitle{Education}
-
-\headedsectionfive
+\begin{resumesection}
+\headeditem
 {University of Southern California}
 {Los Angeles, CA}
-{MS in Computer Science}
-{Starting Aug 2021}
+{Master of Science in Computer Science}
+{Aug 2021--Present}
 
-\headedsectionfive
+\headeditem
 {National Institute of Technology Karnataka}
 {Surathkal, India}
-{BTech in Computer Science and Engineering, GPA 9.05}
-{Aug 2016 -- May 2020}
+{Bachelor of Technology in Computer Science and Engineering, GPA 9.05}
+{Aug 2016--May 2020}
+\end{resumesection}
 
 \roottitle{Languages and Technologies}
-\begin{circlist}
+\begin{resumelist}
 	\item Javascript, Java, Go, Python, C, C++
 	\item Node.js, React, Spring Boot, Docker, Kafka, PostgreSQL, MongoDB, Redis, OpenNetVM, DPDK
-\end{circlist}
+\end{resumelist}
 
 \roottitle{Work Experience}
-\headedsection
+\begin{resumesection}
+
+\headeditem
 {Deskera}
 {Pune, India}
 {Software Development Engineer 1}
-{Aug 2020 -- Present}{
-	\begin{circlist}
-		\item Built the Deskera ECom app (\textit{React}) and microservices (\textit{Spring Boot}) to manage e-commerce stores.
-		\item Implemented long-running data synchronization jobs using Redis Lists as a job queue. This resulted in reduced data loss and faster recovery for running jobs in case of a service failure.
-		\item Used Debezium for change capture and Kafka for passing events between services, leading to a 2x speedup in web service response time versus an inter-service call based approach.
-	\end{circlist}
-}
+{Aug 2020--Jul 2021}
+\begin{resumelist}
+	\item Built the Deskera ECom app (\textit{React}) and microservices (\textit{Spring Boot}) to manage e-commerce stores.
+	\item Implemented long-running data synchronization jobs using Redis Lists as a job queue. This resulted in reduced data loss and faster recovery for running jobs in case of a service failure.
+	\item Used Debezium for change capture and Kafka for passing events between services, leading to a 2x speedup in web service response time versus an inter-service call based approach.
+\end{resumelist}
 
-\headedsection
+\headeditem
 {University of Ottawa}
 {Ottawa, Canada}
 {Visiting Student Researcher under Prof. David Knox}
-{May 2019 -- Aug 2019}{
-	\begin{circlist}
-		\item Built an intrusion detection technique that profiles malware using text-mining of network traffic.
-		\item The technique encodes packets into words and packet flows into \textit{n-grams}. These \textit{n-grams} are vectorized using Doc2Vec, and fed into a Support Vector Machine (SVM) classification model.
-		\item When evaluated against the DeepTraffic network traffic dataset (flow length being varied), our model obtained a 0.95 precision, 0.94 accuracy and 0.89 F1 score in malware classification.
-	\end{circlist}
-}
+{May 2019--Aug 2019}
+\begin{resumelist}
+	\item Built an intrusion detection technique that profiles malware using text-mining of network traffic.
+	\item The technique encodes packets into words and packet flows into \textit{n-grams}. These \textit{n-grams} are vectorized using Doc2Vec, and fed into a Support Vector Machine (SVM) classification model.
+	\item When evaluated against the DeepTraffic network traffic dataset (flow length being varied), our model obtained a 0.95 precision, 0.94 accuracy and 0.89 F1 score in malware classification.
+\end{resumelist}
 
-\headedsection
+\headeditem
 {Indian Institute of Science}
 {Bangalore, India}
-{Research Intern under Prof. K. Gopinath}
-{May 2018 -- Jul 2018}{
-	\begin{circlist}
-		\item Studied performance of Bitcoin nodes - payment verification nodes, full nodes w/ and w/o pruning.
-		\item Implemented a compression algorithm to reduce size of Bitcoin blocks and the blockchain, using history summarization and LZ77 compression, resulting in a 0.78 compression ratio.
-	\end{circlist}
-}
+{Research Intern at Computer Architecture and Systems Lab}
+{May 2018--Jul 2018}
+\begin{resumelist}
+	\item Studied performance of Bitcoin nodes - payment verification nodes, full nodes w/ and w/o pruning.
+	\item Implemented a compression algorithm to reduce size of Bitcoin blocks and the blockchain, using history summarization and LZ77 compression, resulting in a 0.78 compression ratio.
+\end{resumelist}
+\end{resumesection}
 
 \roottitle{Projects}
 
-\begin{circlist}
-	\item \textbf{Handwritten Equation Solver}:\hspace{0.5ex}Android application to solve math equations in an image, using connected-component based image segmentation and a CNN model for symbol recognition. \textit{Node.js, Tensorflow}.
-	\item \textbf{React Database}:\hspace{0.5ex}Database-like web component with support for types, sorting and filtering. \textit{React}.
-	\item \textbf{DPDK Framework for Queue Management}:\hspace{0.5ex}High-performance (tested upto 40Gbps bandwidth), lightweight (1000 lines of C) framework for managing congestion in queues. \textit{DPDK, C}.
-	\item \textbf{ONVM-Snort}:\hspace{0.5ex}Virtualized Network Function (VNF) for the Snort IDS. \textit{C, OpenNetVM}.
-	\item \textbf{VoteChain}:\hspace{0.5ex}Distributed voting system using blockchain as a ledger to store votes. \textit{Python}.
-	\item \textbf{Secure Biometric Authentication System}:\hspace{0.5ex}User authentication using encrypted bio-metric data. \textit{C++}.
-\end{circlist}
+\begin{resumelist}
+    \resumesubsubitem{Handwritten Equation Solver}{Web application to solve math equations in an image, using connected-component based image segmentation and a CNN model for symbol recognition.}{Node.js, Tensorflow}
+    \resumesubsubitem{React Database}{Database-like web component with support for types, sorting and filtering.}{React}
+    \resumesubsubitem{DPDK Framework for Queue Management}{High-performance (tested upto 40Gbps bandwidth), light-weight (1000 lines of C) framework for managing congestion in queues.}{DPDK, C}
+    \resumesubsubitem{ONVM-Snort}{Virtualized Network Function (VNF) for the Snort IDS.}{C, OpenNetVM}
+    \resumesubsubitem{VoteChain}{Distributed voting system using blockchain as a ledger to store votes.}{Python}
+    \resumesubsubitem{Secure Biometric Authentication System}{User authentication using encrypted bio-metric data.}{C++}
+\end{resumelist}
 
 \roottitle{Awards and Additional Experience}
 
-\begin{circlist}
-	\item \textbf{Mitacs Globalink Grant 2019}:\hspace{0.5ex}One of 1500 selected globally out of 100,000+ applicants.
-	\item \textbf{Narendra Summer Fellowship 2018}:\hspace{0.5ex}One of 13 selected in India out of 2,000+ applicants.
-	\item \textbf{Chair at IEEE NITK}:\hspace{0.5ex}Led 150 volunteers in organizing programming workshops and mentoring events.
-\end{circlist}
+\begin{resumelist}
+    \resumesubitem{Mitacs Globalink Grant 2019}{One of 1500 selected globally out of 100,000+ applicants.}
+    \resumesubitem{Narendra Summer Fellowship 2018}{One of 13 selected in India out of 2,000+ applicants.}
+    \resumesubitem{Chair at IEEE NITK}{Led 150 volunteers in organizing programming workshops and mentoring events.}
+\end{resumelist}
+
 \end{document}
